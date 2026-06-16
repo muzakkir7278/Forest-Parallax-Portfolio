@@ -1,0 +1,6 @@
+{
+  "name": "Forest Parallax Portfolio",
+  "description": "A stunning forest parallax scrolling photography portfolio featuring a high-resolution lazy-loaded gallery, smooth animations, an interactive contact form, and integrated social engagement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

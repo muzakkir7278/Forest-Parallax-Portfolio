@@ -1,0 +1,153 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { Photo } from './types';
+
+export const PHOTO_CATEGORIES = [
+  { id: 'all', name: 'All Collection' },
+  { id: 'misty-woods', name: 'Misty Woods' },
+  { id: 'lakes-rivers', name: 'Lakes & Rivers' },
+  { id: 'wildlife', name: 'Wildlife & Fauna' },
+  { id: 'macro-details', name: 'Macro Details' },
+] as const;
+
+export const GALLERY_PHOTOS: Photo[] = [
+  {
+    id: 'redwood-sunbeams',
+    title: 'Redwood Sunbeams',
+    category: 'misty-woods',
+    description: 'Breathtaking vertical expanse of morning mist and golden light piercing through towering coastal redwood canopy.',
+    src: '/src/assets/images/forest_gallery_misty_redwoods_1781599189259.jpg',
+    location: 'Redwood National Park, California',
+    date: 'June 2026',
+    exif: {
+      camera: 'Sony Alpha 7R V',
+      lens: 'FE 24-70mm F2.8 GM II',
+      aperture: 'f/8.0',
+      shutterSpeed: '1/160s',
+      iso: '100',
+      focalLength: '24mm',
+    },
+  },
+  {
+    id: 'alpine-dawn-reflection',
+    title: 'Alpine Dawn Reflection',
+    category: 'lakes-rivers',
+    description: 'A serene alpine lake perfectly mirroring dense pinewoods and a glowing mountain ridge at early sunrise, with soft mystical fog on the water.',
+    src: '/src/assets/images/forest_gallery_lake_reflection_1781599206291.jpg',
+    location: 'Cascade Range, Oregon',
+    date: 'May 2026',
+    exif: {
+      camera: 'Fujifilm GFX 100S',
+      lens: 'GF 32-64mm F4 R LM WR',
+      aperture: 'f/11.0',
+      shutterSpeed: '1/4s',
+      iso: '50',
+      focalLength: '32mm',
+    },
+  },
+  {
+    id: 'monarch-of-the-moss',
+    title: 'Monarch of the Moss',
+    category: 'wildlife',
+    description: 'A stellar red deer stag standing proudly in a dense forest clearing filled with morning fog and glowing light shafts.',
+    src: '/src/assets/images/forest_gallery_deer_morning_1781599223169.jpg',
+    location: 'Black Forest, Germany',
+    date: 'October 2025',
+    exif: {
+      camera: 'Canon EOS R5',
+      lens: 'RF 70-200mm F2.8 L IS USM',
+      aperture: 'f/2.8',
+      shutterSpeed: '1/320s',
+      iso: '400',
+      focalLength: '135mm',
+    },
+  },
+  {
+    id: 'whispers-of-dew',
+    title: 'Whispers of Dew',
+    category: 'macro-details',
+    description: 'A high-detail macro shot of shimmering morning dewdrops resting on fresh needles and rich green moss.',
+    src: '/src/assets/images/forest_gallery_macro_dewdrop_1781599243306.jpg',
+    location: 'Tongass National Forest, Alaska',
+    date: 'April 2026',
+    exif: {
+      camera: 'Sony Alpha 7R V',
+      lens: 'FE 90mm F2.8 Macro G OSS',
+      aperture: 'f/5.6',
+      shutterSpeed: '1/100s',
+      iso: '200',
+      focalLength: '90mm',
+    },
+  },
+  {
+    id: 'emerald-glen',
+    title: 'Emerald Canopy High',
+    category: 'misty-woods',
+    description: 'Standing beneath the giants, looking straight up into the endless emerald matrix of spruce branches blanketed in thick fog.',
+    src: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1600&auto=format&fit=crop',
+    location: 'Olympic Peninsula, Washington',
+    date: 'November 2025',
+    exif: {
+      camera: 'Sony Alpha 7R V',
+      lens: 'FE 16-35mm F2.8 GM',
+      aperture: 'f/6.3',
+      shutterSpeed: '1/200s',
+      iso: '100',
+      focalLength: '16mm',
+    },
+  },
+  {
+    id: 'serpentine-river',
+    title: 'The Serpentine Creek',
+    category: 'lakes-rivers',
+    description: 'An aerial-perspective capture of a pristine glacial creek winding through a dense pine forest, framed by lush undergrowth.',
+    src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1600&auto=format&fit=crop',
+    location: 'Banff National Park, Canada',
+    date: 'September 2025',
+    exif: {
+      camera: 'DJI Mavic 3 Pro',
+      lens: 'Hasselblad 24mm equivalent',
+      aperture: 'f/4.0',
+      shutterSpeed: '1/500s',
+      iso: '100',
+      focalLength: '24mm',
+    },
+  },
+  {
+    id: 'fox-in-the-ferns',
+    title: 'Guardian of the Ferns',
+    category: 'wildlife',
+    description: 'A red fox pauses in a lush field of deep green ferns, its amber eyes locked with the lens in a fleeting moment.',
+    src: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1600&auto=format&fit=crop',
+    location: 'Hokkaido Woodlands, Japan',
+    date: 'February 2026',
+    exif: {
+      camera: 'Canon EOS R5',
+      lens: 'RF 400mm F2.8 L IS USM',
+      aperture: 'f/2.8',
+      shutterSpeed: '1/800s',
+      iso: '320',
+      focalLength: '400mm',
+    },
+  },
+  {
+    id: 'primeval-texture',
+    title: 'Primeval Textures',
+    category: 'macro-details',
+    description: 'Intricate rings and velvet mosses spreading across the trunk of an ancient fallen hemlock tree trunk detailing woodland decay.',
+    src: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1600&auto=format&fit=crop',
+    location: 'Sherwood Forest, United Kingdom',
+    date: 'August 2025',
+    exif: {
+      camera: 'Fujifilm GFX 100S',
+      lens: 'GF 120mm F4 Macro R LM OIS WR',
+      aperture: 'f/8.0',
+      shutterSpeed: '1/60s',
+      iso: '160',
+      focalLength: '120mm',
+    },
+  }
+];
